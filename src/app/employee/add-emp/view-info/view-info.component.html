@@ -1,0 +1,48 @@
+<div>
+    <div>
+        <table class="table table-striped">
+            <tbody>
+                <tr>
+                    <th scope="col">Name</th>
+                    <td>:</td>
+                    <td>{{employee.firstName}} &nbsp; {{employee.lastName}}</td>
+                </tr>
+                <tr>
+                    <th scope="col">Gender</th>
+                    <td>:</td>
+                    <td>{{employee.gender}}</td>
+                </tr>
+                <tr>            
+                    <th scope="col">Date Of Birth</th>
+                    <td>:</td>
+                    <td>{{employee.dateOfBirth | date}}</td>
+                </tr>
+                <tr>            
+                    <th scope="col">Phone</th>
+                    <td>:</td>
+                    <td>{{employee.phone}}</td>
+                </tr>
+                <tr>            
+                    <th scope="col">Skill Name</th>
+                    <td>:</td>
+                    <td>{{employee.skillName}}</td>
+                </tr>
+                <tr>            
+                    <th scope="col">Skill Level</th>
+                    <td>:</td>
+                    <td>{{employee.skillLevel}}</td>
+                </tr>
+                <tr>            
+                    <th scope="col">Experience</th>
+                    <td>:</td>
+                    <td>{{employee.experience}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <button (click)="resetEmployee()" type="button" class="btn btn-info">Reset</button>&nbsp;
+        <button (click)="addEmployee()" type="button" [disabled]="!employee.isValid" *ngIf="!employee.id" class="btn btn-primary">Save</button>
+        <button (click)="updateEmployee()" type="button" [disabled]="!employee.isValid" *ngIf="employee.id" class="btn btn-primary">Update</button>
+    </div>
+</div>

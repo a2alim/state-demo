@@ -1,0 +1,24 @@
+<div class="all_content_wrapper">
+    <div class="pannelArea">
+        <div class="tabArea tab-custom-all">
+            <tabset #tabset>
+                <tab *ngFor="let tab of tabs" [heading]="tab.title" [active]="tab.active"
+                    (select)="tab.active=true; tab.initiated=true; onSelect(tab)" (deselect)="tab.active=false; tab.initiated=false"
+                    [disabled]="tab.disabled" [customClass]="tab.customClass">
+
+                    <ng-container *ngIf="tab.content=='basicInformation' && tab.initiated">
+                        <app-basic-info></app-basic-info>
+                    </ng-container>
+
+                    <ng-container *ngIf="tab.content=='skillInformation' && tab.initiated">
+                        <app-skill-info></app-skill-info>
+                    </ng-container>
+
+                    <ng-container *ngIf="tab.content=='viewInformation' && tab.initiated">
+                        <app-view-info></app-view-info>
+                    </ng-container>
+                </tab>
+            </tabset>
+        </div>
+    </div>
+</div>

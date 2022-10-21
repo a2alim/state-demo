@@ -1,0 +1,43 @@
+<div>
+    <form [formGroup]="form">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="sName">Skill Name</label>
+                    <input type="text" formControlName="skillName" class="form-control" id="sName" placeholder="Ensert Skill Name">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="expiny">Experience in Years</label>
+                    <input type="string" formControlName="experience" class="form-control" id="expiny" placeholder="1 Year or 2 Years ...">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input formControlName="skillLevel" value="Beginner" type="radio" id="beginner" name="skillLevel" class="custom-control-input">
+                        <label class="custom-control-label" for="beginner">Beginner</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input formControlName="skillLevel" value="Intermediate" type="radio" id="intermediate" name="skillLevel" class="custom-control-input">
+                        <label class="custom-control-label" for="intermediate">Intermediate</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input formControlName="skillLevel" value="Advanced" type="radio" id="advanced" name="skillLevel" class="custom-control-input">
+                        <label class="custom-control-label" for="advanced">Advanced</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- <div class="form-group">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="text" id="dob" class="form-control datePicker" bsDatepicker>
+                </div> -->
+            </div>
+        </div>
+
+    </form>
+</div>
