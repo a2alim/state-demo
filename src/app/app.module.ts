@@ -24,7 +24,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     HttpClientModule,
     ToastrModule.forRoot(),
-    SharedModule,
     StoreModule.forRoot(
       {emp: empReducer, isLogin: loginReducer, empList: empListReducer}
     )

@@ -65,3 +65,15 @@ input.ng-touched.ng-invalid{
 .datepicker-dropdown.datepicker-orient-bottom:before {
 	display: none;
 }
+.nav-tabs{
+  background-color: lightskyblue !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  border: 1px solid deepskyblue;
+}
+.form-group{
+  height: 80px !important;
+}
+.form-group input{
+  height: 40px !important;
+}

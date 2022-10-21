@@ -22,7 +22,11 @@ export class AddEmpComponent implements OnInit {
   }
 
   onSelect(tab:any){
+    tab.initiated = true;
+  }
 
+  onDeselect(tab:any){
+    tab.initiated = false;
   }
 
 }

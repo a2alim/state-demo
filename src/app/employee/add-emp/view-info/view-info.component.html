@@ -1,4 +1,7 @@
-<div>
+<div class="body">
+    <div>
+        <h2>Employee Basic Information</h2>
+    </div>
     <div>
         <table class="table table-striped">
             <tbody>
@@ -40,7 +43,7 @@
             </tbody>
         </table>
     </div>
-    <div>
+    <div class="d-flex justify-content-center">
         <button (click)="resetEmployee()" type="button" class="btn btn-info">Reset</button>&nbsp;
         <button (click)="addEmployee()" type="button" [disabled]="!employee.isValid" *ngIf="!employee.id" class="btn btn-primary">Save</button>
         <button (click)="updateEmployee()" type="button" [disabled]="!employee.isValid" *ngIf="employee.id" class="btn btn-primary">Update</button>

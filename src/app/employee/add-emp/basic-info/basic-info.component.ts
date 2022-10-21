@@ -53,14 +53,16 @@ export class BasicInfoComponent implements OnInit, OnDestroy {
   };
 
   ngOnDestroy(){
-    this.employee.id = this.form.value.id;
-    this.employee.firstName = this.form.value.firstName;
-    this.employee.lastName = this.form.value.lastName;
-    this.employee.dateOfBirth = this.form.value.dateOfBirth;
-    this.employee.phone = this.form.value.phone;
-    this.employee.gender = this.form.value.gender;
-    this.employee.isValid = this.form.valid;
-    this.store.dispatch(initEmp(this.employee))
+    if(this.form.valid){
+      this.employee.id = this.form.value.id;
+      this.employee.firstName = this.form.value.firstName;
+      this.employee.lastName = this.form.value.lastName;
+      this.employee.dateOfBirth = this.form.value.dateOfBirth;
+      this.employee.phone = this.form.value.phone;
+      this.employee.gender = this.form.value.gender;
+      this.employee.isValid = this.form.valid;
+      this.store.dispatch(initEmp(this.employee))
+    }
   }
-
+  
 }

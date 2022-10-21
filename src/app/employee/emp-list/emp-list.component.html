@@ -1,6 +1,6 @@
-<div>
+<div class="body">
     <div>
-
+        <h2>Employees Information</h2>
     </div>
     <table class="table table-striped">
         <thead>
@@ -8,7 +8,7 @@
                 <th scope="col">SL</th>
                 <th scope="col">Name</th>
                 <th scope="col">Gender</th>
-                <th scope="col">Date Of <br> Birth</th>
+                <th scope="col">Date Of Birth</th>
                 <th scope="col">Phone</th>
                 <th scope="col">Skill Name</th>
                 <th scope="col">Skill Level</th>
@@ -28,8 +28,7 @@
                 <td>{{emp.experience}}</td>
                 <td>
                     <button (click)="eidt(emp)" type="button" class="btn btn-info">Edit</button>&nbsp;
-                    <button (click)="delete(emp)" type="button" class="btn btn-danger" 
-                        style="color:#000000">Delete</button>
+                    <button (click)="delete(emp)" type="button" class="btn btn-danger">Delete</button>
                 </td>
             </tr>
         </tbody>

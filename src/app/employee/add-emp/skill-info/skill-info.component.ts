@@ -45,11 +45,13 @@ export class SkillInfoComponent implements OnInit, OnDestroy {
   };
   
   ngOnDestroy(){
-    this.employee.id = this.form.value.id;
-    this.employee.skillName = this.form.value.skillName;
-    this.employee.skillLevel = this.form.value.skillLevel;
-    this.employee.experience = this.form.value.experience;
-    this.employee.isValid = this.form.valid;
-    this.store.dispatch(initEmp(this.employee));
+    if(this.form.valid){
+      this.employee.id = this.form.value.id;
+      this.employee.skillName = this.form.value.skillName;
+      this.employee.skillLevel = this.form.value.skillLevel;
+      this.employee.experience = this.form.value.experience;
+      this.employee.isValid = this.form.valid;
+      this.store.dispatch(initEmp(this.employee));
+    }
   }
 }

@@ -4,9 +4,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AlertModule } from 'ngx-bootstrap';
 
-@NgModule({
+@NgModule ({
   declarations: [],
   imports: [
     CommonModule,
@@ -14,7 +13,6 @@ import { AlertModule } from 'ngx-bootstrap';
     BsDatepickerModule.forRoot(),
     HttpClientModule,
     ReactiveFormsModule,
-    AlertModule.forRoot()
   ],
   exports:[
     TabsModule,

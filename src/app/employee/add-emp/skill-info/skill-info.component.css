@@ -1,0 +1,19 @@
+h2 {
+  text-align: center;
+  color: #315aa4;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.body {
+  border: 1px solid deepskyblue;
+  padding: 20px !important;
+  border-top: none;
+}
+.form-check input {
+  height: 20px !important;
+  width: 20px !important;
+  margin-right: 10px !important;
+}
+.form-group {
+  padding-top: 10px;
+}

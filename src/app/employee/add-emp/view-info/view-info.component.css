@@ -1,0 +1,14 @@
+h2 {
+  text-align: center;
+  color: #315aa4;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.body {
+  border: 1px solid deepskyblue;
+  padding: 20px !important;
+  border-top: none;
+}
+table th{
+    width: 120px !important;
+}
